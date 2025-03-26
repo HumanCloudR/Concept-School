@@ -1,0 +1,72 @@
+
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .day-view {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0 2rem 2rem;
+  }
+  
+  .day-header {
+    background-color: #5175e0;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 4px;
+    margin: 1rem 0;
+  }
+  
+  .time-slots {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  
+  .time-slot {
+    display: flex;
+    border-bottom: 1px solid #e0e4e8;
+    min-height: 5rem;
+  }
+  
+  .time-label {
+    width: 100px;
+    padding: 1rem;
+    color: #5a6a85;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  .time-content {
+    flex: 1;
+    padding: 0.5rem;
+    position: relative;
+  }
+  
+  .event {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 10px;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    color: white;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .event-time {
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+  }
+  
+  .event-title {
+    font-weight: 400;
+  }

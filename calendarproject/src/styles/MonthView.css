@@ -1,0 +1,73 @@
+
+.month-view {
+    padding: 1rem 2rem 2rem;
+  }
+  
+  .weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    padding: 0.75rem 0;
+    background-color: #f1f4fa;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: #5a6a85;
+  }
+  
+  .days-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 1px;
+    border: 1px solid #e0e4e8;
+    border-radius: 4px;
+  }
+  
+  .day-cell {
+    min-height: 100px;
+    padding: 0.5rem;
+    border-right: 1px solid #e0e4e8;
+    border-bottom: 1px solid #e0e4e8;
+    background-color: white;
+    position: relative;
+  }
+  
+  .day-cell:nth-child(7n) {
+    border-right: none;
+  }
+  
+  .day-cell:nth-child(n+36) {
+    border-bottom: none;
+  }
+  
+  .day-cell.inactive {
+    background-color: #f9fafc;
+    color: #9aa5b9;
+  }
+  
+  .day-number {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .inactive .day-number {
+    color: #9aa5b9;
+  }
+  
+  .day-events {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  
+  .month-event {
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    color: white;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }

@@ -1,0 +1,66 @@
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #e0e4e8;
+  }
+  
+  .calendar-title h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .month-navigation {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #5a6a85;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav-btn:hover {
+    color: #3c68b1;
+  }
+  
+  .current-month {
+    margin: 0 1rem;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .view-options {
+    display: flex;
+    background-color: #f1f4fa;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .view-option {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #5a6a85;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .view-option:hover {
+    background-color: rgba(60, 104, 177, 0.1);
+  }
+  
+  .view-option.active {
+    background-color: #3c68b1;
+    color: white;
+  }
